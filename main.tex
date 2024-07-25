@@ -9,6 +9,7 @@
 \usepackage[hidelinks]{hyperref}
 \usepackage{titlesec}
 \usepackage{float}
+\usepackage{pdfpages}
 
 \colorlet{punct}{red!60!black}
 \definecolor{background}{HTML}{EEEEEE}
@@ -48,6 +49,8 @@
 \renewcommand{\figurename}{Fig.}
 
 \begin{document}
+
+\includepdf[pages={1}]{assets/cover.pdf}
 
 \tableofcontents
 
