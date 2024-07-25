@@ -85,6 +85,11 @@ Pada iterasi awal ini, Tembang Bali menyimpan seluruh data dalam 3 buah tabel, y
 
 \subsection{Arsitektur \textit{Mobile Client}}
 
+\subsection{Arsitektur \textit{Keamanan}}
+Pada iterasi ini, server Tembang Bali dapat diakses melalui domain yang dikelola menggunakan Cloudflare. Cloudflare digunakan untuk mencegah terjadinya serangan DDOS atau serangan lainnya yang memungkinkan terjadi pada server.
+Pada iterasi selanjutnya, ketika sistem telah mengintegrasikan fitur-fitur yang memerlukan data pribadi milik user, data tersebut akan disimpan dalam bentuk yang telah terenkripsi, sehingga data tersebut hanya dapat diakses oleh pihak yang berwewenang.
+API yang berhubungan dengan data pribadi juga akan memiliki fitur keamanan tersendiri, dan tidak dapat diakses dengan bebas tanpa adanya hak akses tertentu.
+
 \section{Dokumentasi Public API}
 Berikut merupakan dokumentasi \textit{Public API} dari Aplikasi Tembang Bali, yang dapat diakses oleh publik. Untuk saat ini, seluruh sumber daya yang tersedia pada sistem, dapat diakses sepenuhnya oleh masyarakat bebas.\
 
