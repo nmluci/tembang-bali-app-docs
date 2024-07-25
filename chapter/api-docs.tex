@@ -1,0 +1,160 @@
+
+\section{Dokumentasi PocketBase}
+Pada iterasi awal ini, Tembang Bali menyimpan seluruh data dalam 3 buah tabel, yaitu \textit{songs}, \textit{song\_types}, dan \textit{song\_subtypes}.
+
+\subsection*{Song Subtypes}
+\textbf{GET} /api/collections/song\_subtypes/records?page=1\&perPage=1
+
+\textbf{search}:
+
+\indent mendapatkan seluruh subtype yang tersedia pada aplikasi
+
+\textit{Response}:
+\begin{lstlisting}[language=json,firstnumber=1]
+{
+    "page": 1,
+    "perPage": 30,
+    "totalItems": 5,
+    "totalPages": 1,
+    "items": [
+        {
+        "collectionId": "wpn5u2qwdejiy6d",
+        "collectionName": "song_subtypes",
+        "created": "2024-07-03 06:49:40.472Z",
+        "id": "wdsyso7rsy259tg",
+        "name": "Kidung Dewa Yadnya",
+        "song_type": "1uyaj240u3jfxfm",
+        "updated": "2024-07-03 06:49:40.472Z"
+        }
+
+    ]
+}
+        \end{lstlisting}
+
+\textbf{view}:
+
+\textbf{GET} /api/collections/song\_subtypes/records/:id
+
+\indent mendapatkan seluruh subtype  yang tersedia pada aplikasi
+
+\textit{Response}:
+\begin{lstlisting}[language=json,firstnumber=1]
+{
+    "id": "RECORD_ID",
+    "collectionId": "wpn5u2qwdejiy6d",
+    "collectionName": "song_subtypes",
+    "created": "2022-01-01 01:00:00.123Z",
+    "updated": "2022-01-01 23:59:59.456Z",
+    "song_type": "RELATION_RECORD_ID",
+    "name": "test"
+}
+\end{lstlisting}
+
+\subsection*{Song Types}
+\textbf{GET} /api/collections/song\_types/records?page=1\&perPage=1
+
+\textbf{search}:
+
+\indent mendapatkan seluruh type yang tersedia pada aplikasi
+
+\textit{Response}:
+\begin{lstlisting}[language=json,firstnumber=1]
+{
+    "page": 1,
+    "perPage": 30,
+    "totalItems": 5,
+    "totalPages": 1,
+    "items": [
+        {
+            "id": "RECORD_ID",
+            "collectionId": "3dz70i7dtob7rem",
+            "collectionName": "song_types",
+            "created": "2022-01-01 01:00:00.123Z",
+            "updated": "2022-01-01 23:59:59.456Z",
+            "name": "test",
+            "description": "test"
+        }
+    ]
+}
+
+\end{lstlisting}
+
+\textbf{view}:
+
+\textbf{GET} /api/collections/song\_types/records/:id
+
+\indent mendapatkan seluruh type yang tersedia pada aplikasi
+
+\textit{Response}:
+\begin{lstlisting}[language=json,firstnumber=1]
+{
+    "id": "RECORD_ID",
+    "collectionId": "3dz70i7dtob7rem",
+    "collectionName": "song_types",
+    "created": "2022-01-01 01:00:00.123Z",
+    "updated": "2022-01-01 23:59:59.456Z",
+    "name": "test",
+    "description": "test"
+}
+\end{lstlisting}
+
+\subsection*{Songs}
+\textbf{GET} /api/collections/song/records?page=1\&perPage=1
+
+\textbf{search}:
+
+\indent mendapatkan seluruh kidung/lagu yang tersedia pada aplikasi
+
+\textit{Response}:
+\begin{lstlisting}[language=json,firstnumber=1]
+{
+    "page": 1,
+    "perPage": 30,
+    "totalItems": 5,
+    "totalPages": 1,
+    "items": [
+        {
+            "id": "RECORD_ID",
+            "collectionId": "aqly0n339u404q8",
+            "collectionName": "songs",
+            "created": "2022-01-01 01:00:00.123Z",
+            "updated": "2022-01-01 23:59:59.456Z",
+            "song_type": "RELATION_RECORD_ID",
+            "song_subtype": "RELATION_RECORD_ID",
+            "title": "test",
+            "history": "test",
+            "music_data": "filename.jpg",
+            "music_additonal": "filename.jpg",
+            "lyrics": "JSON",
+            "lyric_string": "test",
+            "image": "filename.jpg"
+        }    
+    ]
+}
+\end{lstlisting}
+
+\textbf{view}:
+
+\textbf{GET} /api/collections/song/records/:id
+
+\indent mendapatkan seluruh kidung/lagu yang tersedia pada aplikasi
+
+\textit{Response}:
+\begin{lstlisting}[language=json,firstnumber=1]
+{
+    "id": "RECORD_ID",
+    "collectionId": "aqly0n339u404q8",
+    "collectionName": "songs",
+    "created": "2022-01-01 01:00:00.123Z",
+    "updated": "2022-01-01 23:59:59.456Z",
+    "song_type": "RELATION_RECORD_ID",
+    "song_subtype": "RELATION_RECORD_ID",
+    "title": "test",
+    "history": "test",
+    "music_data": "filename.jpg",
+    "music_additonal": "filename.jpg",
+    "lyrics": "JSON",
+    "lyric_string": "test",
+    "image": "filename.jpg"
+}
+\end{lstlisting}
